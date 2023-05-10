@@ -34,6 +34,12 @@ public class Options {
     }
 
     static void actions(Scanner input, int i) {
+        if(i==0){
+            System.out.println("Thank you for taking our service!");
+        } else if (i==1) {
+            buy(input);
+        }
+
 
     }
 }
