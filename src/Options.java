@@ -30,35 +30,10 @@ public class Options {
         System.out.println("Do you want to buy?");
         System.out.println("1) Yes  2) No");
         int confirmation = input.nextInt();
-        if(confirmation == 1){
-            Tickets.buy(d, t, tp);
-        }
-        else if(confirmation ==2){
-            System.out.println("Ticket purchase canceled!");
-        }
-        else{
-            System.out.println("Invalid Choice. Please Try again!");
-        }
+
     }
 
     static void actions(Scanner input, int i) {
-        switch (i) {
-            case 0:
-                System.out.println("See you again!");
-                System.out.println("Thank you!");
-                break;
-            case 1:
-                buy(input);
-                break;
-            case 2:
-                Tickets.display();
-                break;
-            case 3:
-                History.showHistory();
-                break;
-            default:
-                System.out.println("Invalid command! Please try again!");
-                break;
-        }
+
     }
 }
