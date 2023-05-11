@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Options {
     static void buy(Scanner input) {
         System.out.print("Select your destination: \n");
-        for(int i = 0 ; i <5 ;i++){
+        for(int i = 0 ; i <7 ;i++){
             System.out.println(i+1 + ") " + Tickets.destinations[i]);
         }
 
@@ -35,7 +35,7 @@ public class Options {
 
     static void actions(Scanner input, int i) {
         if(i==0){
-            System.out.println("Thank you for taking our service!");
+            System.out.println("Thank you!");
         } else if (i==1) {
             buy(input);
         }
